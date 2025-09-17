@@ -19,6 +19,24 @@
     <link rel="stylesheet" href="css/premium-style.css">
 </head>
 <body>
+    <!-- Language Detection Banner -->
+    <div id="arabic-banner" class="language-banner" style="display: none;">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <i class="fas fa-globe"></i>
+                    <span>هل تفضل القراءة بالعربية؟ - Prefer to read in Arabic?</span>
+                </div>
+                <div class="banner-actions">
+                    <button onclick="switchToArabic()" class="btn btn-banner">العربية - Arabic</button>
+                    <button class="banner-close" onclick="closeBanner()" title="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Premium Navigation -->
     <nav class="premium-navbar" id="navbar">
         <div class="container">
@@ -32,6 +50,7 @@
                 <a href="#proof" class="nav-link">Impact</a>
                 <a href="#investment" class="nav-link">Investment</a>
                 <a href="https://forms.gle/Z59Uqc7wvTMT3oUJ7" class="btn btn-primary-nav" target="_blank">Join Now</a>
+                <a href="ar/index.html" class="lang-switch" title="العربية">العربية</a>
             </div>
             <div class="mobile-menu-toggle">
                 <span></span>
